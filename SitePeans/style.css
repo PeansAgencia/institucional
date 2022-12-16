@@ -1,0 +1,268 @@
+/* configurações iniciais */
+
+* {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    /* variaveis de cores */
+
+    --blue: #0008BC;
+    --orange:#E55300;
+    --gray: #888888;
+    --white1: #FFFFFF;
+    --white2: #eaeaea;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    font-size: 2.5rem;
+}
+
+/*  Fundo */
+
+body {
+    background-color: var(--white1);
+}
+
+/***  Cabeçalho ***/
+
+/* tudo */
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    
+    background-color: var(--white1);
+}
+
+/* contato */
+
+.head1 {
+    display: flex;
+    justify-content: right;
+    
+    background-color: var(--white1);
+    width: 100%;
+}
+
+.headcontato {
+    color: var(--blue);
+    font-weight: 500;
+    padding: 6px 60px 6px 0;
+    font-size: x-large;
+    background-color: var(--white2);
+    padding-left: 80px;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.headcontato:hover {
+    color: var(--white1);
+    background-color: var(--blue);
+}
+
+
+/* imagem / list */
+
+.head2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    border: 1px solid var(--gray);
+}
+
+/* imagem */
+
+.headimg {
+    background-color: var(--blue);
+    width: 40%;
+    display: flex;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.headimg img {
+    width: auto;
+    height: auto;
+    margin: 11px 180px 11px auto;
+}
+
+/* list */
+
+.headul {
+    width: 70%;
+    height: 100%;
+    margin-left: -125px;
+}
+
+.headul ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    
+    /*border: 1px solid var(--gray);*/
+    border-right: none;
+    clip-path: polygon(12.3% 0, 100% 0, 100% 100%, 0 100%);
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+
+    list-style: none;
+    color: var(--orange);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.headul ul li {
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.headul ul li:hover {
+    background-color: var(--white2);
+}
+
+/*  Div1 */
+
+.main1 {
+    padding-top: 8vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main1 div {
+    width: 50%;
+    padding-inline: 80px;
+    gap: 80px;
+}
+
+.imgplanta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgplanta div {
+    border-radius: 140px;
+    z-index: 10;
+    box-shadow: 0px 4px 25px 10px #00000026;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    width: 300px;
+}
+
+.imgplanta img {
+    width: 140%;
+    z-index: 20;
+    margin: 0px 40px 70px 0px;
+}
+
+.caixatexto1 {
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 60px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Div2 */
+
+.main2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 44vw;
+}
+
+.main2 .pizza {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main2 .pizza img {
+    height: 550px;
+}
+
+.main2 .caixatexto2 {
+    color: var(--white1);
+    width: 40%;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main2 .caixatexto2 h1 {
+    font-size: 66px;
+    margin-right: 150px;
+    width: 100%;
+    text-align: right;
+}
+
+.main2 .caixatexto2 p {
+    width: 100%;
+    text-align: right;
+    margin-right: 150px;
+    font-size: 35px;
+}
+
+.main2 .caixatexto2 .saibamais {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-bottom: 25px;
+}
+
+.main2 .caixatexto2 input {
+    border-radius: 60px;
+    width: 50%;
+    height: 80px;
+    border: none;
+    background-color: var(--white1);
+    color: var(--orange);
+    font-size: 35px;
+    margin-right: 70px;
+    font-weight: bold;
+}
+
+/*  Div3 */
+
+.main3 {
+    height: 50vw;
+}
+
+.main3 div {
+    background-color: var(--blue);
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100%;
+    height: 80%;
+    -webkit-transform: skew(0deg, -3deg);
+}
+
+/*  Rodapé */
+
+.footer {
+    background-color: var(--gray);
+    height: 40vw;
+}
